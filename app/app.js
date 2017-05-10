@@ -1,30 +1,23 @@
 
 var joke = "JavaScript walked into a bar....';
-var toldJoke = "false";
+var told Joke = "false"
 var $punchline = 'Better watch out for those semi-colons.'
 var result
+var hehesz ek = 'łemata"
+var a=1
+var b='4"
 
-if (toldJoke === true) {
-    Console.log($punchline);
-} else {
-    console.log(joke);
-}
 
-var zip_code = 98104;
-var joesFavorite_Movie = Forbidden Planet;
-var movieTicket$ = 9;
-//
-if (movieTicket$ >= 9) {
-    console.log("Too much!");
-} else {
-    console.log("We're going to see " + joesFavoriteMovie);
-}
+while (a==8) | (b=3)
+    a++;
+    print(hehesz ek)
 
-var a = 5;
-var b = "5";
+<img src="not_existing_foobar.png"
+onerror="alert('Wystąpił błąd')" />
+
 var equal;
 
-if (a == b) {
+if (a != b) {
     equal = true;
 } else {
     equal = false;
