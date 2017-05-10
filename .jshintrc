@@ -1,0 +1,8 @@
+
+{
+    "camelcase": true,
+    "asi": false,
+    "eqeqeq": true,
+    "quotmark": "single",
+    "devel": true
+}
