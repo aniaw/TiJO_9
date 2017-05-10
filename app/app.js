@@ -1,27 +1,27 @@
 
 var joke = 'JavaScript walked into a bar....';
-var told_joke = 'false'
+var toldJoke = false;
 var $punchline = 'Better watch out for those semi-colons.';
 //var result;
 
-if (toldJoke == true) {
+if (toldJoke === true) {
     console.log($punchline);
 } else {
-    console.log(joke)
+    console.log(joke);
 }
 
 //zipCodevar zipCode = 98104;
 var joesFavoriteMovie = 'Forbidden Planet';
-var movie_ticket$ = 9;
+var movieTicket$ = 9;
 //
 if (movieTicket$ >= 9) {
     console.log('Too much!');
 } else {
-    console.log("Were going to see " + joesFavoriteMovie);
+    console.log('Were going to see ' + joesFavoriteMovie);
 }
 
 var a = 5;
-var b = '5';
+var b = 5;
 var equal;
 
 if (a === b) {
@@ -29,4 +29,3 @@ if (a === b) {
 } else {
     equal = false;
 }
-
