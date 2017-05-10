@@ -16,11 +16,17 @@ var movieTicket$ = 9;
 //
 if (movieTicket$ >= 9) {
     console.log('Too much!');
-    if (1 == 1){
-        if (1 == 0){
-            if (1 == 1 | 1 == 0){
-                Console.log("Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst.");
-            }
+    if (1 === 1){
+        if (1 === 0){
+            Console.log("Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy " +
+                "zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. " +
+                "Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz " +
+                "ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy " +
+                "czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu " +
+                "jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz " +
+                "jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy " +
+                "zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem " +
+                "ciekawy czy zauwazysz ze masz jakiś tekst. Tu jestem ciekawy czy zauwazysz ze masz jakiś tekst.");
         }
     }
 } else {
@@ -31,7 +37,7 @@ var a = 5;
 var b = '5';
 var equal;
 
-if (a == b) {
+if (a === b) {
     equal = true;
 } else {
     equal = false;
