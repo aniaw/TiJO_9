@@ -1,9 +1,10 @@
 {
+    "asi" : false, //1
     "bitwise": true,
     "browser": true,
-    "camelcase": true,
+    "camelcase": false, //2
     "curly": true,
-    "eqeqeq": true,
+    "eqeqeq": false, //5
     "eqnull": true,
     "forin": true,
     "freeze": true,
@@ -13,7 +14,7 @@
     "latedef": true,
     "maxcomplexity": 10,
     "maxdepth": 2,
-    "maxlen": 160,
+    "maxlen": 61, //3
     "maxparams": 20,
     "maxstatements": 0,
     "newcap": true,
@@ -22,7 +23,7 @@
     "nonbsp": true,
     "nonew": true,
     "plusplus": false,
-    "quotmark": "single",
+    "quotmark": "double", //4
     "strict": true,
     "trailing": true,
     "undef": true,
