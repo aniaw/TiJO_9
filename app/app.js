@@ -4,17 +4,21 @@ var toldJoke = 'false';
 var $punchline = 'Better watch out for those semi-colons.';
 //var result
 var g=3,j=5,k=6;
-var 'ashdbhasbdkqwbckjqbjcbqjkebcjqejklcbqwjekbcjkwebcjkwbejkvcwbekvbqejkcbqekjfcbqekjbcfjkqebfbqejkbfkjqebfkjqebfjkqebfkjqebfbqekjfbqejkbfjkqebfjkqebjkfbqekjfbjkqebfjkbqejkfkjqebfjkbqejkfbjkqewbfjlwebjvcejlcbjlwebcjlkewbfjlkwebjklcbewjkvbwejkbvjwebvkjwebvkjwebvjkwebvjkwebvjkew';
+var text = 'ashdbhasbdkqwbckjqbjcbqjkebcjqejklcbqwjekbcjkwebcjkwbejkvcwbek' +
+    'vbqejkcbqekjfcbqekjbcfjkqebfbqejkbfkjqebfkjqebfjkqebfkjqebfbqekjf' +
+'bqejkbfjkqebfjkqebjkfbqekjfbjkqebfjkbqejkfkjqebfjkbqejkfbjkqewbfjlweb' +
+'jvcejlcbjlwebcjlkewbfjlkwebjklcbewjkvbwejkbvjwebvkjwebvkjwebvjkwebvj' +
+'kwebvjkew';
 
 
 
 
-function myfunction(g,j,k){
-    return (g+j)*k;
+function myfunction(g,k){
+    return (g)*k;
 }
 if(g<j){
-    if(k==g){
-        if(j==g){
+    if(k===g){
+        if(j===g){
             console.log('hahahah');
         }
     }
@@ -28,7 +32,7 @@ if (toldJoke === true) {
 }
 
 //var zip_code = 98104;
-var joes_Favorite_Movie = 'Forbidden Planet';
+var joesFavoriteMovie = 'Forbidden Planet';
 var movieTicket$ = 9;
 //
 if (movieTicket$ >= 9) {
@@ -42,7 +46,7 @@ var a = 5;
 var b = '5';
 var equal;
 
-if (a == b) {
+if (a === b) {
     equal = true;
 } else {
     equal = false;
