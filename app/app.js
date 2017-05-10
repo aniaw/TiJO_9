@@ -1,18 +1,19 @@
 
-var joke = "JavaScript walked into a bar....";
-var result;
+var joke = 'JavaScript walked into a bar....';
+//var result;
+var toldJoke = 'asd';
 
 if (toldJoke === true) {
-    Console.log("no joke");
+    console.log('no joke');
 } else {
-    Console.log(joke);
+    console.log(joke);
 }
 
 var a = 5;
 var equal;
-equal = a++;
+equal ='as';
 
-if (a === b) {
+if (a === 'b') {
     equal = true;
 } else {
     equal = false;
