@@ -1,12 +1,12 @@
 
-var is_Valid;
-var pin_Code = "1234";
+//var isValid;
+var pinCode = '1234';
 
 
-if(typeof pinCode == 'string') {
+if(typeof pinCode === 'string') {
     if (pinCode.length === 4) {
-        Console.log('Wprowadzono PIN\n');
+        console.log('Wprowadzono PIN\n');
 
-        console.log('Mozna wypłacić gotówkę')
+        console.log('Mozna wypłacić gotówkę');
     }
 }
