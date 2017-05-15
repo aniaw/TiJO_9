@@ -1,6 +1,7 @@
 {
   "name": "TiJO_09",
   "version": "1.0.0",
+  "private": true,
   "devDependencies": {
     "chai": "3.5.0",
     "istanbul": "0.4.5",
@@ -11,3 +12,5 @@
     "coverage": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive -R spec"
   }
 }
+
+
