@@ -1,30 +1,27 @@
+var joke = 'JavaScript walked into a bar....';
+var result;
+var zipCode = 98104;
+var array = {'sff': 'sdd', 'f': 'ggh'};
+var equal;
 
-var joke = "JavaScript walked into a bar....';
-var toldJoke = "false";
-var $punchline = 'Better watch out for those semi-colons.'
-var result
+function fun(a)
+    {'use strict';
+        return a === null;}
 
-if (toldJoke === true) {
-    Console.log($punchline);
-} else {
+
+while (result) {
     console.log(joke);
 }
 
-var zip_code = 98104;
-var joesFavorite_Movie = Forbidden Planet;
-var movieTicket$ = 9;
-//
-if (movieTicket$ >= 9) {
-    console.log("Too much!");
-} else {
-    console.log("We're going to see " + joesFavoriteMovie);
-}
+for (var a in array)
+    { if (array.hasOwnProperty(a)){
+        fun(a);}}
 
-var a = 5;
-var b = "5";
-var equal;
 
-if (a == b) {
+var a = 5^8; // jshint ignore:line
+var b = '5';
+
+if (a === b && zipCode != null) {
     equal = true;
 } else {
     equal = false;
