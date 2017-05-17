@@ -1,7 +1,7 @@
-car_Portal: function() {
+function fun() {
     this.credentials = {};
     this.login = function (username, password) {
-        if(username == "xyz" ||  password.length<3){
+        if(username === 'xyz' ||  password.length<3){
             this.logout();
             return false;
         } else {
@@ -9,10 +9,10 @@ car_Portal: function() {
             this.credentials.password=password;
 
         }
-        var totallyusefulvar = 3.14;
-        var verylong = "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasddddddddddddddddddddddddddddddddddd";
     };
     this.logout = function () {
         this.crendtials =  {};
-    }
+    };
 }
+
+fun();
