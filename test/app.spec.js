@@ -3,46 +3,65 @@
 var expect = require('chai').expect;
 var app = require('../app/app');
 
-describe('areaOfTrapezoid', function ()
+describe('calculate area of trapezoid', function ()
 {
-    describe('when "a","b" and "h" are non-negative numbers', function ()
+    describe('when parameters are negative numbers', function ()
     {
-        it('should return area of trapezoid', function ()
+        it('should return false', function ()
         {
-            expect(app.areaOfTrapezoid(2, 2, 2)).to.equal(4);
-            expect(app.areaOfTrapezoid(1, 3, 6)).to.equal(12);
+            expect(app.areaOfTrapezoid(-1, -1, -3)).to.eql(false);
+            expect(app.areaOfTrapezoid(-1, 1, -3)).to.eql(false);
+            expect(app.areaOfTrapezoid(-1, 1, 3)).to.eql(false);
+            expect(app.areaOfTrapezoid(1, -1, -3)).to.eql(false);
+            expect(app.areaOfTrapezoid(1, 1, -3)).to.eql(false);
+        });
+    });
+    describe('when parameters are positive numbers', function ()
+    {
+        it('should return area', function ()
+        {
+            expect(app.areaOfTrapezoid(1, 2, 2)).to.eql(3);
+        });
+    });
+    describe('when parameters are not numbers', function ()
+    {
+        it('should return false', function ()
+        {
+            expect(app.areaOfTrapezoid("ala", -1, "basia")).to.eql(false);
         });
     });
 
-    describe('when "a", "b" or "h" is a negative number', function ()
+});
+
+describe('isPrime check', function ()
+{
+    describe('when parameters are negative numbers', function ()
     {
-        it('should return false when "a" is a negative number', function ()
+        it('should return false', function ()
         {
-            expect(app.areaOfTrapezoid(-1, 3, 6)).to.equal(false);
+            expect(app.isPrime(-3)).to.eql(false);
         });
-        it('should return false when "b" is a negative number', function ()
+    });
+    describe('when parameters are positive and is prime number', function ()
+    {
+        it('should return false', function ()
         {
-            expect(app.areaOfTrapezoid(1, -3, 6)).to.equal(false);
+            expect(app.isPrime(31)).to.eql(true);
         });
-        it('should return false when "h" is a negative number', function ()
+    });
+    describe('when parameters are positive and is not a prime number', function ()
+    {
+        it('should return false', function ()
         {
-            expect(app.areaOfTrapezoid(1, 3, -6)).to.equal(false);
+            expect(app.isPrime(32)).to.eql(false);
         });
     });
 
-    describe('when "a", "b" or "h" is not a number', function ()
+    describe('when parameters are not number', function ()
     {
-        it('should return false when "a" is not a number', function ()
+        it('should return false', function ()
         {
-            expect(app.areaOfTrapezoid('text', 3, 6)).to.equal(false);
-        });
-        it('should return false when "b" is not a number', function ()
-        {
-            expect(app.areaOfTrapezoid(1, 'text', 6)).to.equal(false);
-        });
-        it('should return false when "h" is not a number', function ()
-        {
-            expect(app.areaOfTrapezoid(1, 3, 'text')).to.equal(false);
+            expect(app.isPrime('ala')).to.eql(false);
         });
     });
 });
