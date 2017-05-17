@@ -1,31 +1,17 @@
+var string = "dsasdaassadsd";
 
-var joke = "JavaScript walked into a bar....';
-var toldJoke = "false";
-var $punchline = 'Better watch out for those semi-colons.'
-var result
+var test = "iWereTooLong";
 
-if (toldJoke === true) {
-    Console.log($punchline);
-} else {
-    console.log(joke);
+console.log(test + string);
+
+var unusedVariable = 10;
+console.log(unusedVariable);//used now
+var x = 1;
+var y = 2;
+if(x < y) {
+    x += y;
+}
+if((x < 10) && (y < 3)) {
+    console.log(x + y);
 }
 
-var zip_code = 98104;
-var joesFavorite_Movie = Forbidden Planet;
-var movieTicket$ = 9;
-//
-if (movieTicket$ >= 9) {
-    console.log("Too much!");
-} else {
-    console.log("We're going to see " + joesFavoriteMovie);
-}
-
-var a = 5;
-var b = "5";
-var equal;
-
-if (a == b) {
-    equal = true;
-} else {
-    equal = false;
-}
