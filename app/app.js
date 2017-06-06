@@ -1,16 +1,16 @@
-var mati;
-var a = 'false';
-var text_1 = 'good';
-var text2 = 'bad';
-var b = 22;
 
-if (a == true) {
-    console.log(text_1);
+var a = 'false';
+var t1 = 'good';
+var t2 = 'bad';
+
+
+if (a === true) {
+    console.log(t1);
 } else {
-    console.log(text2);
+    console.log(t2);
 }
 
-if(text1 == 'good' |         text2 == 'bad')
+if(t1==='good'||t2==='bad')
 {
     console.log('hehehe');
 }
