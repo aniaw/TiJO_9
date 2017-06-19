@@ -2,6 +2,7 @@
 var joke = 'JavaScript walked into a bar....';
 var toldJoke = 'false';
 var $punchline = 'Better watch out for those semi-colons.';
+//var result
 
 if (toldJoke === true) {
     console.log($punchline);
@@ -9,6 +10,7 @@ if (toldJoke === true) {
     console.log(joke);
 }
 
+//var zip_code = 98104;
 var joesFavoriteMovie = 'Forbidden Planet';
 var movieTicket$ = 9;
 //
