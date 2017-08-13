@@ -1,20 +1,20 @@
-var day;
+//var day;
 var n = Math.floor((Math.random() * 7) + 1);
-var dayOfThe_Week;
+var dayOfTheWeek;
 
 switch (n) {
     case ("1"):
         dayOfTheWeek = "Sunday";
         break;
     case ("2"):
-        dayOfTheWeek = 'Monday';
+        dayOfTheWeek = "Monday";
         break;
     case ("3"):
         dayOfTheWeek = "Tuesday";
         break;
     case ("4"):
         dayOfTheWeek = "Wednesday";
-        break
+        break;
     case ("5"):
         dayOfTheWeek = "Thursday";
         break;
@@ -29,4 +29,4 @@ switch (n) {
         break;
 }
 
-consol.log(dayOfTheWeek);
+console.log(dayOfTheWeek);
