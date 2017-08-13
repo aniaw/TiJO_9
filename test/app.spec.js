@@ -3,46 +3,50 @@
 var expect = require('chai').expect;
 var app = require('../app/app');
 
-describe('areaOfTrapezoid', function ()
-{
-    describe('when "a","b" and "h" are non-negative numbers', function ()
-    {
-        it('should return area of trapezoid', function ()
-        {
-            expect(app.areaOfTrapezoid(2, 2, 2)).to.equal(4);
-            expect(app.areaOfTrapezoid(1, 3, 6)).to.equal(12);
+describe('isPrime', function () {
+
+    describe('When argument is ok', function () {
+        describe('and is prime number', function () {
+            it('should return true', function () {
+                expect(app.isPrime(23)).to.eql(true);
+            });
+        });
+
+        describe('and is not prime number', function () {
+            it('should return false', function () {
+                expect(app.isPrime(22)).to.eql(false);
+            });
         });
     });
 
-    describe('when "a", "b" or "h" is a negative number', function ()
-    {
-        it('should return false when "a" is a negative number', function ()
-        {
-            expect(app.areaOfTrapezoid(-1, 3, 6)).to.equal(false);
-        });
-        it('should return false when "b" is a negative number', function ()
-        {
-            expect(app.areaOfTrapezoid(1, -3, 6)).to.equal(false);
-        });
-        it('should return false when "h" is a negative number', function ()
-        {
-            expect(app.areaOfTrapezoid(1, 3, -6)).to.equal(false);
+    describe('When argument is not number', function () {
+        it('should return false', function () {
+            expect(app.isPrime('x')).to.eql(false);
         });
     });
 
-    describe('when "a", "b" or "h" is not a number', function ()
-    {
-        it('should return false when "a" is not a number', function ()
-        {
-            expect(app.areaOfTrapezoid('text', 3, 6)).to.equal(false);
-        });
-        it('should return false when "b" is not a number', function ()
-        {
-            expect(app.areaOfTrapezoid(1, 'text', 6)).to.equal(false);
-        });
-        it('should return false when "h" is not a number', function ()
-        {
-            expect(app.areaOfTrapezoid(1, 3, 'text')).to.equal(false);
+});
+
+
+
+describe('areaOfTrapezoid', function () {
+
+    describe('When arguments are ok', function () {
+        it('should return area of trapezoid', function () {
+            expect(app.areaOfTrapezoid(44, 33, 10)).to.eql(385);
         });
     });
+
+    describe('When argument is negative', function () {
+        it('should return false', function () {
+            expect(app.areaOfTrapezoid(0, 10, -5)).to.eql(false);
+        });
+    });
+
+    describe('When arguments are not numbers', function () {
+        it('should return false', function () {
+            expect(app.areaOfTrapezoid(88, 44, '55')).to.eql(false);
+        });
+    });
+
 });
