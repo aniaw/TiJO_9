@@ -1,8 +1,8 @@
-var isEmpty;
-var your_name = '';
+//var isEmpty;
+var yourName = '';
 
-if(yourName.length == 3){
-    if(yourName === "Ala"){
-        Console.log('Witaj Ala!');
+if(yourName.length === 3){
+    if(yourName === 'Ala'){
+        console.log('Witaj Ala!');
     }
 }
